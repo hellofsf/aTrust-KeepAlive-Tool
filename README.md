@@ -10,27 +10,18 @@
 * **模拟机制**：调用 Windows Forms API 直接发送按键指令，被操作系统视为真实的用户输入。
 
 ## 使用方法
+### 命令行运行
 
-### 方式一：直接运行 (推荐)
+在 cmd 终端中执行：
 
-1. 找到脚本文件 `SSH_KeepAlive.ps1`。
-2. **右键点击**该文件。
-3. 选择 **“使用 PowerShell 运行” (Run with PowerShell)**。
-4. 脚本启动后会弹出一个控制台窗口，看到绿色的 `[Success]` 提示即表示正在工作。
-5. **将窗口最小化**即可（**不要关闭**窗口）。
-
-### 方式二：命令行运行
-
-在 PowerShell 终端中执行：
-
-```powershell
-.\SSH_KeepAlive.ps1
+```cmd
+powershell -ExecutionPolicy Bypass -File d:\explo\explo\aTrust_KeepAlive.ps1
 ```
 
 如果你想自定义间隔时间（例如改为每 60 秒一次）：
 
-```powershell
-.\SSH_KeepAlive.ps1 -IntervalSeconds 60
+```cmd
+powershell -ExecutionPolicy Bypass -File d:\explo\explo\aTrust_KeepAlive.ps1 -IntervalSeconds 60
 ```
 
 ## 配置说明
