@@ -12,7 +12,7 @@
 ## 使用方法
 ### 命令行运行
 
-在 cmd 终端中执行：
+在 cmd 终端中执行([win + `]可直接调出windows终端)：
 
 ```cmd
 powershell -ExecutionPolicy Bypass -File d:\explo\explo\aTrust_KeepAlive.ps1
